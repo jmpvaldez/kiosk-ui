@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import correct from "../../../public/images/correct.png";
+import icons from "../../../public/images/icons.PNG";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function MenuCard({ categories }) {
@@ -12,7 +12,7 @@ export default function MenuCard({ categories }) {
           href={category.link}
           className="card border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
         >
-          <Image width={80} height={80} src={correct} alt="pic" />
+          <Image width={80} height={80} src={icons} alt="pic" />
           <p>{category.title}</p>
         </Link>
       ))}

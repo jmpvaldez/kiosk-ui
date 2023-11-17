@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import correct from "../../../public/images/correct.png";
+import icons from "../../../public/images/icons.PNG";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function ProgramsCard({ categories }) {
@@ -15,7 +15,7 @@ export default function ProgramsCard({ categories }) {
           <Image
             width={65}
             height={65}
-            src={correct}
+            src={icons}
             alt={category.title}
             className="mt-4"
           />
