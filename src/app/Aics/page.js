@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import correct from "../../../public/images/correct.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import AicsCard from "../components/AicsCard";
 
 export default function Aics() {
   return (
@@ -17,26 +18,27 @@ export default function Aics() {
         </div>
       </header>
 
-      <div className="flex flex-row mt-5 md:mt-4 gap-8">
-        <div className="w-1/3 border-r-2 px-12 items-center  flex flex-col justify-between">
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+      <div className="flex flex-col md:flex-col lg:flex-row mt-5 md:mt-4 gap-8">
+        <div className="w-full md:w-full md:gap-5 lg:w-1/3 border-r-0 lg:border-r-2 px-8  md:px-12 items-center  flex flex-col justify-between">
+          <Link
+            href={"Aics"}
+            className="border rounded-3xl mx-auto text-blue-900 mb-5 min-w-full md:w-10/12 md:mb-0 items-center gap-1 py-4  hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col justify-center text-center"
+          >
             <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
+            <p>
+              Person with <br /> Disability
+            </p>
             <FaArrowRightLong />
-          </span>
+          </Link>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
           </p>
         </div>
-        <main className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 items-start justify-start w-full mt-5 md:mt-4 ">
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+
+        <main className="md:grid md:grid-cols-2 lg:grid-cols-4  items-start justify-items-center gap-4 w-full mt-5 md:mt-4 ">
+          {/* <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
             <Image width={65} height={65} src={correct} alt="pic" />
             <p>Person with Disability</p>
             <FaArrowRightLong />
@@ -81,27 +83,16 @@ export default function Aics() {
             <Image width={65} height={65} src={correct} alt="pic" />
             <p>Person with Disability</p>
             <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>
+          </span>{" "} */}
+
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
+          <AicsCard />
         </main>
       </div>
 
@@ -110,7 +101,7 @@ export default function Aics() {
         <div className="flex flex-row justify-center  items-center gap-3">
           <IoIosArrowRoundBack />
           <Link
-            href={"Programs"}
+            href={"Menu"}
             className=" text-dark rounded-md mt-auto float-right"
           >
             Back
