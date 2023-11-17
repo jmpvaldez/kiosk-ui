@@ -9,7 +9,7 @@ export default function Start() {
     /* eslint-disable react/no-unescaped-entities */
 
     <main className=" h-screen flex flex-col items-start justify-start ">
-      <header className="pt-12 pl-12 md:pr-36 md:pt-36 md:pl-36 flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
+      <header className="md:py-14 md:px-36 md:pl-36 flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Image src={Logo} width={400} height={100} alt="logo" />
         </div>
@@ -50,7 +50,7 @@ export default function Start() {
         </div>
       </div>
 
-      <main className="p-12  md:p-36 flex flex-row  items-center gap-3 justify-start w-full md:w-1/3  mt-auto">
+      <main className="md:py-14 md:px-36 flex flex-row  items-center gap-3 justify-start w-full md:w-1/3  mt-auto">
         <IoIosArrowRoundBack />
         <Link href={"/"} className=" text-dark rounded-md mt-auto">
           Back
