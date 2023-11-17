@@ -17,13 +17,10 @@ export default function Programs() {
         </div>
       </header>
       <div className="flex mt-6 items-start  md:items-center flex-col md:flex-row justify-between w-full mb-4">
-        <Link
-          href={"/Programs"}
-          className=" text-gray-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
+        <div className=" text-gray-500 font-bold items-center gap-6 p-3  md:text-5xl flex flex-row">
           <Image width={80} height={80} src={icons} alt="pic" />
           <p>Program Categories</p>
-        </Link>
+        </div>
       </div>
       <main className="md:grid  md:grid-cols-3 lg:grid-cols-6 gap-4   w-full mt-5 md:mt-4 ">
         <ProgramsCard />

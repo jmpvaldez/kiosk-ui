@@ -21,13 +21,10 @@ export default function Support() {
         </div>
       </header>
       <div className="flex md:flex-col my-6 items-start  md:items-start flex-col lg:flex-row justify-between w-full mb-4">
-        <Link
-          href={"/Programs"}
-          className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
-        >
+        <div className=" text-red-500 font-bold items-center gap-6 p-3  md:text-5xl flex flex-row">
           <Image width={80} height={80} src={icons} alt="pic" />
           <p>Help and Support</p>
-        </Link>
+        </div>
         <div className="lg:w-1/2 text-gray-500 font-sans font-bold items-start gap-6 p-3 text-lg">
           <p className="mt-4 font-bold text-gray-900">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
