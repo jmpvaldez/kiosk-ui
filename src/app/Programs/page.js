@@ -13,7 +13,7 @@ export default function Programs() {
             DSWD
           </Link>
         </div>
-        <div className="flex items-center lg:text-4xl md:text-2xl text-blue-900 font-sans font-bold">
+        <div className="flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
           <p>#BawatBuhayMahalagaSaDSWD</p>
         </div>
       </header>
