@@ -39,13 +39,6 @@ export default function Aics() {
 
         <main className="md:grid md:grid-cols-2 lg:grid-cols-4  items-start justify-items-center gap-4 w-full mt-5 md:mt-4 ">
           <AicsCard />
-          <AicsCard />
-          <AicsCard />
-          <AicsCard />
-          <AicsCard />
-          <AicsCard />
-          <AicsCard />
-          <AicsCard />
         </main>
       </div>
 

@@ -28,17 +28,6 @@ export default function Programs() {
       </div>
       <main className="md:grid  md:grid-cols-3 lg:grid-cols-6 gap-4   w-full mt-5 md:mt-4 ">
         <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
-        <ProgramsCard />
       </main>
       <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <div></div>

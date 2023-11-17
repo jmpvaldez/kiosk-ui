@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import correct from "../../../public/images/correct.png";
+import MenuCard from "../components/MenuCard";
 
 export default function Menu() {
   return (
@@ -23,64 +24,7 @@ export default function Menu() {
       </header>
 
       <main className="md:grid md:grid-cols-2 gap-4 items-start justify-start w-full mt-5 md:mt-14 ">
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Program Categories</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Featured Stories</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Service Listings</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Emergency Information</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>
-            Frequently Asked <br /> Questions (FAQS)
-          </p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Social Media Integration</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Promotions and News</p>
-        </Link>
-        <Link
-          href={"/Programs"}
-          className=" border-b-2 text-gray-800 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
-        >
-          <Image width={80} height={80} src={correct} alt="pic" />
-          <p>Help and Support</p>
-        </Link>
+        <MenuCard />
       </main>
       <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
