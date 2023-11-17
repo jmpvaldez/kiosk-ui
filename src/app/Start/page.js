@@ -11,7 +11,14 @@ export default function Start() {
     <main className=" h-screen flex flex-col items-start justify-start ">
       <header className="md:py-14 md:px-36 md:pl-36 flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
-          <Image src={Logo} width={400} height={100} alt="logo" />
+          <Image
+            src={Logo}
+            width={350}
+            height={100}
+            priority={true}
+            alt="logo"
+            style={{ width: "auto", height: "auto" }}
+          />
         </div>
         <div className="flex  items-center">
           <input

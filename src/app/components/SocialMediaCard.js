@@ -58,8 +58,20 @@ export default function SocialMediaCard({
               show[category.id] ? "flex" : "hidden"
             }  flex-row justify-between py-4`}
           >
-            <Image src={dswd} width={200} height={100} alt="qr" />
-            <Image src={qr} width={70} height={70} alt="qr" />
+            <Image
+              src={dswd}
+              width={200}
+              height={100}
+              alt="qr"
+              style={{ width: "auto", height: "auto" }}
+            />
+            <Image
+              src={qr}
+              width={70}
+              height={70}
+              alt="qr"
+              style={{ width: "auto", height: "auto" }}
+            />
           </div>
         </div>
       ))}

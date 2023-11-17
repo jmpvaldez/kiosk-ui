@@ -12,7 +12,13 @@ export default function AicsCard({ categories }) {
           href={"Faqs"}
           className="border hover:bg-teal-100 rounded-3xl mx-auto text-gray-900 mb-5 min-w-1/4 md:w-10/12 md:mb-0 items-center gap-1 py-4  hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col justify-center text-center"
         >
-          <Image width={65} height={65} src={icons} alt="pic" />
+          <Image
+            width={65}
+            height={65}
+            src={icons}
+            alt="pic"
+            style={{ width: "auto", height: "auto" }}
+          />
           <p>{category.title}</p>
           <FaArrowRightLong />
         </Link>

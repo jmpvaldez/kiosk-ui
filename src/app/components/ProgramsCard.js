@@ -18,6 +18,7 @@ export default function ProgramsCard({ categories }) {
             src={icons}
             alt={category.title}
             className="mt-4"
+            style={{ width: "auto", height: "auto" }}
           />
           <p>{category.title}</p>
           <FaArrowRightLong />

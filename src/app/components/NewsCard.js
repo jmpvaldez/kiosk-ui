@@ -15,7 +15,13 @@ export default function NewsCard() {
       </a>
       <div className="">
         <a href="#">
-          <Image src={correct} width={400} height={200} alt="image" />
+          <Image
+            src={correct}
+            width={400}
+            height={200}
+            alt="image"
+            style={{ width: "auto", height: "auto" }}
+          />
         </a>
 
         <p className="p-2 mb-3 font-normal text-gray-700 ">

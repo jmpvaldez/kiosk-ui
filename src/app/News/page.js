@@ -11,7 +11,14 @@ export default function Programs() {
     <main className=" h-screen flex flex-col items-start justify-start p-12 md:py-14 md:px-36">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
-          <Image src={Logo} width={400} height={100} alt="logo" />
+          <Image
+            src={Logo}
+            width={350}
+            height={100}
+            alt="logo"
+            priority={true}
+            style={{ width: "auto", height: "auto" }}
+          />
         </div>
         <div className="flex items-center">
           <input
@@ -22,8 +29,14 @@ export default function Programs() {
         </div>
       </header>
       <div className="flex mt-6 items-start  md:items-center flex-col md:flex-row justify-between w-full mb-4">
-        <div className=" text-gray-500 font-bold items-center gap-6 p-3  md:text-5xl flex flex-row">
-          <Image width={80} height={80} src={icons} alt="pic" />
+        <div className=" text-gray-500 font-bold items-center gap-6 p-3 md:text-5xl flex flex-row">
+          <Image
+            width={80}
+            height={80}
+            src={icons}
+            alt="pic"
+            style={{ width: "auto", height: "auto" }}
+          />
           <p>Promotions and News</p>
         </div>
       </div>
