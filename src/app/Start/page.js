@@ -42,7 +42,7 @@ export default function Start() {
           <p className="text-gray-600 mb-4 text-center text-xl md:text-4xl">
             Hi there! Welcome to the <br /> Department of Social Welfare and{" "}
             <br />
-            Development's Interactive Kiosks! <br /> How can I help you today?
+            Developments Interactive Kiosks! <br /> How can I help you today?
           </p>
         </div>
       </div>
