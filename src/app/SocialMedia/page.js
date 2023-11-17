@@ -31,16 +31,6 @@ export default function SocialMedia() {
 
       <main className="md:grid md:px-24 md:grid-cols-2 lg:grid-cols-3 gap-1 w-full mt-5 md:mt-4 ">
         <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
-        <SocialMediaCard />
       </main>
       <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <div></div>
