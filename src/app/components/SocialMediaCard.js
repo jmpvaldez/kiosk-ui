@@ -5,21 +5,32 @@ import dswd from "../../../public/images/dswd.PNG";
 import Image from "next/image";
 
 export default function SocialMediaCard({ categories }) {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState({});
+  const toggleShow = (categoryId) => {
+    setShow((prevShow) => ({
+      ...Object.fromEntries(Object.keys(prevShow).map((key) => [key, false])),
+      [categoryId]: !prevShow[categoryId],
+    }));
+  };
+
   return (
     <>
       {categories.map((category) => (
-        <div onClick={() => setShow(!show)} className="md:mx-4 cursor-pointer">
+        <div
+          key={category.id} // Use the id as the unique key
+          onClick={() => toggleShow(category.id)} // Use the id for toggling show state
+          className="md:mx-4 cursor-pointer"
+        >
           <div
             className={`${
-              show ? "" : "border-gray-200 border-b-2"
+              show[category.id] ? "border-gray-200 border-b-2" : ""
             }  py-2 text-lg text-gray-900`}
           >
             {category.name}
           </div>
           <div
             className={` ${
-              show ? "hidden" : "flex"
+              show[category.id] ? "flex" : "hidden"
             }  flex-row justify-between py-4`}
           >
             <Image src={dswd} width={200} height={100} alt="qr" />
@@ -33,90 +44,26 @@ export default function SocialMediaCard({ categories }) {
 
 SocialMediaCard.defaultProps = {
   categories: [
-    {
-      name: "@DSWD",
-      regions: [],
-    },
-    {
-      name: "@DSWD",
-      regions: ["Central Visayas"],
-    },
-    {
-      name: "@DSWD Field Office || Cagayan Valley",
-      regions: ["Cagayan Valley"],
-    },
-    {
-      name: "@DSWD Field Office || Central Luzon",
-      regions: ["Central Luzon"],
-    },
-    {
-      name: "@DSWD Field Office |V-A CALABARZON",
-      regions: ["V-A CALABARZON"],
-    },
-    {
-      name: "@DSWD Field Office MIMAROPA",
-      regions: ["MIMAROPA"],
-    },
-    {
-      name: "@DSWD Field Office V Bicol Region",
-      regions: ["Bicol Region"],
-    },
-    {
-      name: "@DSWD Field Office V| Western Visayas",
-      regions: ["Western Visayas"],
-    },
-
-    {
-      name: "@DSWD Field Office V||| Eastern Visayas",
-      regions: ["Eastern Visayas"],
-    },
-    {
-      name: "@DSWD Field Office |X Zamboanga Peninsula",
-      regions: ["Zamboanga Peninsula"],
-    },
-    {
-      name: "@DSWD Field Office X Northern Mindanao",
-      regions: ["Northern Mindanao"],
-    },
-    {
-      name: "@DSWD Field Office X| Davao Region",
-      regions: ["Davao Region"],
-    },
-    {
-      name: "@DSWD Field Office X|| SOCCSKSARGEN",
-      regions: ["SOCCSKSARGEN"],
-    },
-    {
-      name: "@DSWD Field Office National Capital Region",
-      regions: ["National Capital Region"],
-    },
-    {
-      name: "@DSWD Field Office Caraga",
-      regions: ["Caraga"],
-    },
-    {
-      name: "@DSWD Field Office Cordillera Administrative Region",
-      regions: ["Cordillera Administrative Region"],
-    },
-    {
-      name: "@Pantawid Pamilyang Pilipino",
-      regions: [],
-    },
-    {
-      name: "@AICS",
-      regions: [],
-    },
-    {
-      name: "@Sustainable Livelihood Program",
-      regions: [],
-    },
-    {
-      name: "@DRMB",
-      regions: [],
-    },
-    {
-      name: "@KALAHI-CIDSS",
-      regions: [],
-    },
+    { id: 1, name: "@DSWD" },
+    { id: 2, name: "@DSWD" },
+    { id: 3, name: "@DSWD Field Office || Cagayan Valley" },
+    { id: 4, name: "@DSWD Field Office || Central Luzon" },
+    { id: 5, name: "@DSWD Field Office |V-A CALABARZON" },
+    { id: 6, name: "@DSWD Field Office MIMAROPA" },
+    { id: 7, name: "@DSWD Field Office V Bicol Region" },
+    { id: 8, name: "@DSWD Field Office V| Western Visayas" },
+    { id: 9, name: "@DSWD Field Office V||| Eastern Visayas" },
+    { id: 10, name: "@DSWD Field Office |X Zamboanga Peninsula" },
+    { id: 11, name: "@DSWD Field Office X Northern Mindanao" },
+    { id: 12, name: "@DSWD Field Office X| Davao Region" },
+    { id: 13, name: "@DSWD Field Office X|| SOCCSKSARGEN" },
+    { id: 14, name: "@DSWD Field Office National Capital Region" },
+    { id: 15, name: "@DSWD Field Office Caraga" },
+    { id: 16, name: "@DSWD Field Office Cordillera Administrative Region" },
+    { id: 17, name: "@Pantawid Pamilyang Pilipino" },
+    { id: 18, name: "@AICS" },
+    { id: 19, name: "@Sustainable Livelihood Program" },
+    { id: 20, name: "@DRMB" },
+    { id: 21, name: "@KALAHI-CIDSS" },
   ],
 };
