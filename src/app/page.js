@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 export default function Home() {
   return (
-    <main className="bg-gray-100 h-screen flex flex-col items-start justify-start p-12 md:p-36">
+    <main className=" h-screen flex flex-col items-start justify-start p-12 md:p-36">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <span className="text-4xl font-bold">DSWD</span>
