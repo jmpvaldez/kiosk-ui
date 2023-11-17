@@ -4,13 +4,14 @@ import correct from "../../../public/images/correct.png";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import NewsCard from "../components/NewsCard";
+import Logo from "../../../public/images/Logo.PNG";
 
 export default function Programs() {
   return (
     <main className=" h-screen flex flex-col items-start justify-start p-12 md:p-36">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
-          <span className="text-4xl font-bold">DSWD</span>
+          <Image src={Logo} width={400} height={100} alt="logo" />
         </div>
         <div className="flex items-center">
           <input

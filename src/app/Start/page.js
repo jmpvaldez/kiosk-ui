@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
+import Logo from "../../../public/images/Logo.PNG";
 
 export default function Start() {
   return (
@@ -10,7 +11,7 @@ export default function Start() {
     <main className=" h-screen flex flex-col items-start justify-start ">
       <header className="pt-12 pl-12 md:pr-36 md:pt-36 md:pl-36 flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
-          <span className="text-4xl font-bold">DSWD</span>
+          <Image src={Logo} width={400} height={100} alt="logo" />
         </div>
         <div className="flex  items-center">
           <input
