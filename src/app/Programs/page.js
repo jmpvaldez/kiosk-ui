@@ -9,7 +9,9 @@ export default function Programs() {
     <main className=" h-screen flex flex-col items-start justify-start p-12 md:p-36">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
-          <span className="text-4xl font-bold">DSWD</span>
+          <Link href={"/"} className="text-4xl font-bold">
+            DSWD
+          </Link>
         </div>
         <div className="flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
           <p>#BawatBuhayMahalagaSaDSWD</p>
@@ -25,72 +27,108 @@ export default function Programs() {
         </Link>
       </div>
       <main className="md:grid md:grid-cols-3 lg:grid-cols-6 gap-4 items-start justify-start w-full mt-5 md:mt-4 ">
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>
-        <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>
             Senior <br /> Citizens
           </p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>
             General <br /> Public
           </p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>
             Travel Clearance <br /> for Minors
           </p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>{" "}
-        <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
+        </Link>{" "}
+        <Link
+          href={"Aics"}
+          className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center"
+        >
           <Image width={65} height={65} src={correct} alt="pic" />
           <p>Person with Disability</p>
           <FaArrowRightLong />
-        </span>
+        </Link>
       </main>
       <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <div></div>
