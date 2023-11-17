@@ -12,7 +12,7 @@ export default function FaqsCard({ openDiv, onOpenDivChange }) {
       onClick={handleButtonClick}
       className={`${
         openDiv ? "w-full" : ""
-      }   mx-14 border-b-2 text-gray-600 items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl flex flex-row`}
+      }  mx-14 border-b-2 text-gray-600 items-center  p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl flex flex-row`}
     >
       <p>
         How to avail assistance from the Assistance to Individuals in Crisis

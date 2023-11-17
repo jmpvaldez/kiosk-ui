@@ -63,7 +63,7 @@ export default function Faqs() {
             <MdOutlineMessage
               className={`${
                 openDiv ? "hidden" : "block"
-              } ml-auto text-4xl text-red-900 `}
+              } ml-auto text-4xl text-red-900`}
             />
             <div className={`${openDiv ? "hidden" : "block"}`}>
               <p>
