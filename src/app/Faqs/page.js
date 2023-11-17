@@ -48,12 +48,14 @@ export default function Faqs() {
           </h2>
         </span>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-row w-full border border-red-200">
         <main
           className={`${
             openDiv ? "w-full" : "w-1/3"
-          } flex flex-col gap-2 mt-5 md:mt-2`}
+          } flex flex-col gap-2 mt-5 md:mt-2 `}
         >
+          <FaqsCard openDiv={openDiv} onOpenDivChange={handleOpenDivChange} />
+          <FaqsCard openDiv={openDiv} onOpenDivChange={handleOpenDivChange} />
           <FaqsCard openDiv={openDiv} onOpenDivChange={handleOpenDivChange} />
         </main>
         <main className="flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">

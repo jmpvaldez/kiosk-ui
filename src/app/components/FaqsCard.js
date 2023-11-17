@@ -20,7 +20,7 @@ export default function FaqsCard({ openDiv, onOpenDivChange }) {
       </p>
       <MdOutlineMessage
         className={`${
-          openDiv ? "block" : "hidden"
+          openDiv ? "flex" : "hidden"
         } ml-auto text-4xl text-red-900 `}
       />
     </span>
