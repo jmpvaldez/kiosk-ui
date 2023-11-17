@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import correct from "../../../public/images/correct.png";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import ProgramsCard from "../components/ProgramsCard";
 import SocialMediaCard from "../components/SocialMediaCard";
 
 export default function SocialMedia() {
@@ -28,7 +27,9 @@ export default function SocialMedia() {
           <p>Social Media Integration</p>
         </Link>
       </div>
-
+      <div className="md:mx-28 py-2 border-b-2 w-full flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
+        <p>facebook</p>
+      </div>
       <main className="md:grid md:px-24 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1 w-full mt-5 md:mt-4 ">
         <SocialMediaCard />
       </main>
