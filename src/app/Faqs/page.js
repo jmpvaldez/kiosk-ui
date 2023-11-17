@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -5,10 +6,15 @@ import FaqsCard from "../components/FaqsCard";
 import Image from "next/image";
 import correct from "../../../public/images/correct.png";
 import { MdOutlineMessage } from "react-icons/md";
+import { useState } from "react";
 
 export default function Faqs() {
+  const [openDiv, setOpenDiv] = useState(false);
+  const handleOpenDivChange = (value) => {
+    setOpenDiv(value);
+  };
   return (
-    <main className=" h-screen flex flex-col items-start justify-start p-12 md:p-36">
+    <main className="h-screen flex flex-col items-start justify-start p-12 md:p-36 ">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Link href={"/"} className="text-4xl font-bold">
@@ -32,24 +38,32 @@ export default function Faqs() {
           <p>PFAQs</p>
         </Link>
         <span className="w-2/3">
-          <h2 className="font-semibold text-gray-500 text-2xl">
+          <h2
+            className={`${
+              openDiv ? "hidden" : "block"
+            } font-semibold text-gray-500 text-2xl`}
+          >
             How to avail assistance from the Assistance to Individuals in Crisis
             Situation AICS
           </h2>
         </span>
       </div>
       <div className="flex flex-row">
-        <main className="flex flex-col gap-2 md:w-1/3 w-full mt-5 md:mt-2 ">
-          <FaqsCard />
-          <FaqsCard />
-          <FaqsCard />
-          <FaqsCard />
-          <FaqsCard />
-        </main>{" "}
-        <main className="flex flex-col  md:w-2/3 w-full mt-5 md:mt-2 ">
+        <main
+          className={`${
+            openDiv ? "w-full" : "w-1/3"
+          } flex flex-col gap-2 mt-5 md:mt-2`}
+        >
+          <FaqsCard openDiv={openDiv} onOpenDivChange={handleOpenDivChange} />
+        </main>
+        <main className="flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="flex flex-row gap-3 items-start  justify-start">
-            <MdOutlineMessage className="ml-auto text-4xl text-red-900 " />
-            <div>
+            <MdOutlineMessage
+              className={`${
+                openDiv ? "hidden" : "block"
+              } ml-auto text-4xl text-red-900 `}
+            />
+            <div className={`${openDiv ? "hidden" : "block"}`}>
               <p>
                 How to avail assistance from the Assistance to Individuals in
                 Crisis Situation AICS How to avail assistance from the
