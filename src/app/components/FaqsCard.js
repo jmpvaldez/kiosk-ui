@@ -5,7 +5,7 @@ import { MdOutlineMessage } from "react-icons/md";
 
 export default function FaqsCard({ openDiv, onOpenDivChange }) {
   const handleButtonClick = () => {
-    onOpenDivChange(!openDiv);
+    onOpenDivChange(false);
   };
   return (
     <span

@@ -9,7 +9,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import { useState } from "react";
 
 export default function Faqs() {
-  const [openDiv, setOpenDiv] = useState(false);
+  const [openDiv, setOpenDiv] = useState(true);
   const handleOpenDivChange = (value) => {
     setOpenDiv(value);
   };
@@ -48,7 +48,7 @@ export default function Faqs() {
           </h2>
         </span>
       </div>
-      <div className="flex flex-row w-full border border-red-200">
+      <div className="flex flex-row w-full">
         <main
           className={`${
             openDiv ? "w-full" : "w-1/3"
