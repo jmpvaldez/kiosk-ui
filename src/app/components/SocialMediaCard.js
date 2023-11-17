@@ -4,8 +4,33 @@ import qr from "../../../public/images/qr.PNG";
 import dswd from "../../../public/images/dswd.PNG";
 import Image from "next/image";
 
-export default function SocialMediaCard({ categories }) {
+export default function SocialMediaCard({
+  categories = [
+    { id: 1, name: "@DSWD" },
+    { id: 2, name: "@DSWD" },
+    { id: 3, name: "@DSWD Field Office || Cagayan Valley" },
+    { id: 4, name: "@DSWD Field Office || Central Luzon" },
+    { id: 5, name: "@DSWD Field Office |V-A CALABARZON" },
+    { id: 6, name: "@DSWD Field Office MIMAROPA" },
+    { id: 7, name: "@DSWD Field Office V Bicol Region" },
+    { id: 8, name: "@DSWD Field Office V| Western Visayas" },
+    { id: 9, name: "@DSWD Field Office V||| Eastern Visayas" },
+    { id: 10, name: "@DSWD Field Office |X Zamboanga Peninsula" },
+    { id: 11, name: "@DSWD Field Office X Northern Mindanao" },
+    { id: 12, name: "@DSWD Field Office X| Davao Region" },
+    { id: 13, name: "@DSWD Field Office X|| SOCCSKSARGEN" },
+    { id: 14, name: "@DSWD Field Office National Capital Region" },
+    { id: 15, name: "@DSWD Field Office Caraga" },
+    { id: 16, name: "@DSWD Field Office Cordillera Administrative Region" },
+    { id: 17, name: "@Pantawid Pamilyang Pilipino" },
+    { id: 18, name: "@AICS" },
+    { id: 19, name: "@Sustainable Livelihood Program" },
+    { id: 20, name: "@DRMB" },
+    { id: 21, name: "@KALAHI-CIDSS" },
+  ],
+}) {
   const [show, setShow] = useState({});
+
   const toggleShow = (categoryId) => {
     setShow((prevShow) => ({
       ...Object.fromEntries(Object.keys(prevShow).map((key) => [key, false])),
@@ -42,7 +67,7 @@ export default function SocialMediaCard({ categories }) {
   );
 }
 
-SocialMediaCard.defaultProps = {
+/* SocialMediaCard.defaultProps = {
   categories: [
     { id: 1, name: "@DSWD" },
     { id: 2, name: "@DSWD" },
@@ -67,3 +92,4 @@ SocialMediaCard.defaultProps = {
     { id: 21, name: "@KALAHI-CIDSS" },
   ],
 };
+ */

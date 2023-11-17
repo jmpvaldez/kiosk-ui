@@ -3,6 +3,7 @@ import Link from "next/link";
 import correct from "../../../public/images/correct.png";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import SocialMediaCard from "../components/SocialMediaCard";
+import { FaSearch } from "react-icons/fa";
 
 export default function SocialMedia() {
   return (
@@ -13,8 +14,12 @@ export default function SocialMedia() {
             DSWD
           </Link>
         </div>
-        <div className="flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
-          <p>#BawatBuhayMahalagaSaDSWD</p>
+        <div className="flex items-center">
+          <input
+            type="text"
+            className="px-4 py-2 border-b border-gray-300 focus:outline-none bg-transparent"
+          />
+          <FaSearch className="text-xl" />
         </div>
       </header>
 
@@ -27,13 +32,13 @@ export default function SocialMedia() {
           <p>Social Media Integration</p>
         </Link>
       </div>
-      <div className="md:mx-28 py-2 border-b-2 w-full flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
+      <div className="md:mx-28 py-2 border-b-2 w-full lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
         <p>facebook</p>
       </div>
       <main className="md:grid md:px-24 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1 w-full mt-5 md:mt-4 ">
         <SocialMediaCard />
       </main>
-      <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
+      <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12 md:mt-auto">
         <div></div>
         <div className="flex flex-row justify-center  items-center gap-3">
           <IoIosArrowRoundBack />
