@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import correct from "../../../public/images/correct.png";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import ProgramsCard from "../components/ProgramsCard";
+import { FaSearch } from "react-icons/fa";
 
 export default function Support() {
   return (
@@ -13,8 +13,12 @@ export default function Support() {
             DSWD
           </Link>
         </div>
-        <div className="flex items-center lg:text-3xl md:text-2xl text-blue-900 font-sans font-bold">
-          <p>#BawatBuhayMahalagaSaDSWD</p>
+        <div className="flex items-center">
+          <input
+            type="text"
+            className="px-4 py-2 border-b border-gray-300 focus:outline-none bg-transparent"
+          />
+          <FaSearch className="text-xl" />
         </div>
       </header>
       <div className="flex md:flex-col mt-6 items-start  md:items-start flex-col lg:flex-row justify-between w-full mb-4">
