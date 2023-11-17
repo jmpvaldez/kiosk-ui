@@ -7,7 +7,7 @@ import SocialMediaCard from "../components/SocialMediaCard";
 
 export default function SocialMedia() {
   return (
-    <main className=" h-screen flex flex-col items-start justify-start p-12 md:p-36">
+    <main className=" h-screen flex flex-col items-start justify-start p-12 lg:p-36">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Link href={"/"} className="text-4xl font-bold">
@@ -29,7 +29,7 @@ export default function SocialMedia() {
         </Link>
       </div>
 
-      <main className="md:grid md:px-24 md:grid-cols-2 lg:grid-cols-3 gap-1 w-full mt-5 md:mt-4 ">
+      <main className="md:grid md:px-24 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-1 w-full mt-5 md:mt-4 ">
         <SocialMediaCard />
       </main>
       <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
