@@ -13,7 +13,7 @@ export default function SocialMediaCard() {
           show ? "" : "border-gray-200 border-b-2"
         }  py-2 text-lg text-gray-900`}
       >
-        @DSWD
+        @DSWD Field Office | Ilocos Region
       </div>
       <div
         className={` ${

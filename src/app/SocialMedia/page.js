@@ -22,7 +22,7 @@ export default function SocialMedia() {
       <div className="flex mt-6 items-start  md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <Link
           href={"/Programs"}
-          className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-2xl flex flex-row"
+          className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
         >
           <Image width={80} height={80} src={correct} alt="pic" />
           <p>Social Media Integration</p>
