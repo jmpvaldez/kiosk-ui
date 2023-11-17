@@ -4,6 +4,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import FaqsCard from "../components/FaqsCard";
 import Image from "next/image";
 import correct from "../../../public/images/correct.png";
+import { MdOutlineMessage } from "react-icons/md";
 
 export default function Faqs() {
   return (
@@ -30,14 +31,54 @@ export default function Faqs() {
           <Image width={80} height={80} src={correct} alt="pic" />
           <p>PFAQs</p>
         </Link>
+        <span className="w-2/3">
+          <h2 className="font-semibold text-gray-500 text-2xl">
+            How to avail assistance from the Assistance to Individuals in Crisis
+            Situation AICS
+          </h2>
+        </span>
       </div>
-      <main className="flex flex-col gap-2 w-full mt-5 md:mt-2 ">
-        <FaqsCard />
-        <FaqsCard />
-        <FaqsCard />
-        <FaqsCard />
-        <FaqsCard />
-      </main>
+      <div className="flex flex-row">
+        <main className="flex flex-col gap-2 md:w-1/3 w-full mt-5 md:mt-2 ">
+          <FaqsCard />
+          <FaqsCard />
+          <FaqsCard />
+          <FaqsCard />
+          <FaqsCard />
+        </main>{" "}
+        <main className="flex flex-col  md:w-2/3 w-full mt-5 md:mt-2 ">
+          <div className="flex flex-row gap-3 items-start  justify-start">
+            <MdOutlineMessage className="ml-auto text-4xl text-red-900 " />
+            <div>
+              <p>
+                How to avail assistance from the Assistance to Individuals in
+                Crisis Situation AICS How to avail assistance from the
+                Assistance to Individuals in Crisis Situation AICS How to avail
+                assistance from the Assistance to Individuals in Crisis
+                Situation AICS
+              </p>
+              <br />
+              <br />
+              <p>
+                How to avail assistance from the Assistance to Individuals in
+                Crisis Situation AICS How to avail assistance from the
+                Assistance to Individuals in Crisis Situation AICS <br /> How to
+                avail assistance from the Assistance to Individuals in Crisis
+                Situation AICS
+              </p>
+              <br />
+              <p>
+                How to avail assistance from the Assistance to Individuals in
+                Crisis Situation AICS How to avail assistance from the
+                Assistance to Individuals in Crisis Situation AICS <br /> How to
+                avail assistance from the Assistance to Individuals in Crisis
+                Situation AICS
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+
       <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
         <Link href={"/"} className=" text-dark rounded-md mt-auto">

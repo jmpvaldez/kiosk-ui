@@ -38,53 +38,6 @@ export default function Aics() {
         </div>
 
         <main className="md:grid md:grid-cols-2 lg:grid-cols-4  items-start justify-items-center gap-4 w-full mt-5 md:mt-4 ">
-          {/* <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>
-          <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>
-              Senior <br /> Citizens
-            </p>
-            <FaArrowRightLong />
-          </span>
-          <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5  w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>
-              General <br /> Public
-            </p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>
-              Travel Clearance <br /> for Minors
-            </p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "}
-          <span className=" border rounded-3xl text-blue-900 mb-5 w-10/12 md:mb-0 items-center gap-1 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-xl flex flex-col  justify-center text-center">
-            <Image width={65} height={65} src={correct} alt="pic" />
-            <p>Person with Disability</p>
-            <FaArrowRightLong />
-          </span>{" "} */}
-
           <AicsCard />
           <AicsCard />
           <AicsCard />
