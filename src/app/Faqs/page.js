@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import FaqsCard from "../components/FaqsCard";
 import Image from "next/image";
-import correct from "../../../public/images/correct.png";
+import icons from "../../../public/images/icons.PNG";
 import { MdOutlineMessage } from "react-icons/md";
 import { useState } from "react";
 import Logo from "../../../public/images/Logo.PNG";
@@ -33,7 +33,7 @@ export default function Faqs() {
           href={"/Programs"}
           className=" text-gray-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
         >
-          <Image width={80} height={80} src={correct} alt="pic" />
+          <Image width={80} height={80} src={icons} alt="pic" />
           <p>PFAQs</p>
         </Link>
         <span className="w-2/3">

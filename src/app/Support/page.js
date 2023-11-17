@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import correct from "../../../public/images/correct.png";
+import icons from "../../../public/images/icons.PNG";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import Logo from "../../../public/images/Logo.PNG";
@@ -25,7 +25,7 @@ export default function Support() {
           href={"/Programs"}
           className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
         >
-          <Image width={80} height={80} src={correct} alt="pic" />
+          <Image width={80} height={80} src={icons} alt="pic" />
           <p>Help and Support</p>
         </Link>
         <div className="lg:w-1/2 text-gray-500 font-sans font-bold items-start gap-6 p-3 text-lg">

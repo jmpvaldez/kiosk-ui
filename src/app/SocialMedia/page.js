@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import correct from "../../../public/images/correct.png";
+import icons from "../../../public/images/icons.PNG";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import SocialMediaCard from "../components/SocialMediaCard";
 import { FaSearch } from "react-icons/fa";
@@ -27,7 +27,7 @@ export default function SocialMedia() {
           href={"/Programs"}
           className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
         >
-          <Image width={80} height={80} src={correct} alt="pic" />
+          <Image width={80} height={80} src={icons} alt="pic" />
           <p>Social Media Integration</p>
         </Link>
       </div>
