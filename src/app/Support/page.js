@@ -20,7 +20,7 @@ export default function Support() {
           <FaSearch className="text-xl" />
         </div>
       </header>
-      <div className="flex md:flex-col mt-6 items-start  md:items-start flex-col lg:flex-row justify-between w-full mb-4">
+      <div className="flex md:flex-col my-6 items-start  md:items-start flex-col lg:flex-row justify-between w-full mb-4">
         <Link
           href={"/Programs"}
           className=" text-red-500 font-bold items-center gap-6 p-3 hover:cursor-pointer hover:text-red-900 hover:font-semibold md:text-4xl flex flex-row"
