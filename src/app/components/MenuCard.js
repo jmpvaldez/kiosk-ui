@@ -52,7 +52,7 @@ MenuCard.defaultProps = {
       title: "Emergency Information",
       description:
         "Access emergency information to stay prepared and informed.",
-      link: "/emergency-information",
+      link: "Emergency",
     },
     {
       id: 5,

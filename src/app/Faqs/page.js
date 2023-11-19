@@ -120,18 +120,18 @@ export default function Faqs() {
           </h2>
         </span>
       </div>
-      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden">
-        <main
+      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden border">
+        <div
           className={`${
             openDiv ? "w-full" : "w-1/3 "
-          } flex flex-col gap-2 mt-5 md:mt-2 `}
+          } flex flex-col gap-2 mt-5 md:mt-2  `}
         >
           <FaqsCard
             openDiv={openDiv}
             onOpenDivChange={handleOpenDivChange}
             onItemNoChange={handleItemNoChange}
           />
-        </main>
+        </div>
         <main className=" flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage

@@ -75,13 +75,11 @@ export default function FaqsCard({
           onClick={() => handleButtonClick(category.id)}
           className={`${
             openDiv ? "w-full" : ""
-          }  mx-14 border-b-2 text-gray-600 items-center  p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl flex flex-row`}
+          }  mx-14 border-b-2 text-gray-600 items-center  justify-between  p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl flex flex-row`}
         >
           <p>{category.title}</p>
           <MdOutlineMessage
-            className={`${
-              openDiv ? "flex" : "hidden"
-            } ml-auto text-4xl text-red-900 `}
+            className={`${openDiv ? "flex" : "hidden"}  text-4xl text-red-900 `}
           />
         </span>
       ))}
