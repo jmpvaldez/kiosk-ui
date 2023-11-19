@@ -36,6 +36,30 @@ export default function FaqsCard({
       D How to avail assistance from the Assistance to Individuals in
      `,
     },
+    {
+      id: 5,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
+    {
+      id: 6,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
+    {
+      id: 7,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
   ],
 }) {
   const handleButtonClick = (categoryId) => {

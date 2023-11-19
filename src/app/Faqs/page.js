@@ -26,30 +26,55 @@ export default function Faqs() {
       title:
         "How to avail assistance from the Assistance to Individuals in Crisis Situation AICS",
       content: `
-      Content for Assistance to Individuals in Crisis Situation AICS...
+      How to avail assistance from the Assistance to Individuals in Crisis Situation AICS How to avail assistance from the Assistance to Individuals in
+           
     `,
     },
     {
       id: 2,
       title: "How to acquire Travel Clearance?",
       content: `
-      Content for acquiring Travel Clearance...
-    `,
+      B How to avail assistance from the Assistance to Individuals in
+     `,
     },
     {
       id: 3,
       title: "How to join the Pantawid Pamilyang Pilipino Program (4ps)?",
       content: `
-      Content for joining the Pantawid Pamilyang Pilipino Program (4ps)...
-    `,
+      C How to avail assistance from the Assistance to Individuals in
+     `,
     },
     {
       id: 4,
       title:
         "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
       content: `
-      Content for availing assistance from the Sustainable Livelihood Program(SLP)...
-    `,
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
+    {
+      id: 5,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
+    {
+      id: 6,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
+    },
+    {
+      id: 7,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      D How to avail assistance from the Assistance to Individuals in
+     `,
     },
   ];
 
@@ -95,10 +120,10 @@ export default function Faqs() {
           </h2>
         </span>
       </div>
-      <div className="flex flex-row w-full">
+      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden">
         <main
           className={`${
-            openDiv ? "w-full" : "w-1/3"
+            openDiv ? "w-full" : "w-1/3 "
           } flex flex-col gap-2 mt-5 md:mt-2 `}
         >
           <FaqsCard
@@ -107,8 +132,8 @@ export default function Faqs() {
             onItemNoChange={handleItemNoChange}
           />
         </main>
-        <main className="flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
-          <div className="flex flex-row gap-3 items-start  justify-start">
+        <main className=" flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+          <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage
               className={`${
                 openDiv ? "hidden" : "block"
