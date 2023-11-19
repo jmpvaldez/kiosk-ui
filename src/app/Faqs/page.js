@@ -120,7 +120,7 @@ export default function Faqs() {
           </h2>
         </span>
       </div>
-      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden border">
+      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden ">
         <div
           className={`${
             openDiv ? "w-full" : "w-1/3 "
