@@ -5,24 +5,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function NewsCard() {
   return (
-    <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow mb-4">
-      <a href="#">
-        <img
-          className="rounded-t-lg"
-          src="/docs/images/blog/image-1.jpg"
-          alt=""
-        />
-      </a>
-      <div className="">
-        <a href="#">
+    <div className="max-w-sm mx-auto bg-white border rounded-lg">
+      <div className="relative">
+        <Link href="#">
           <Image
             src={correct}
             width={400}
             height={200}
+            objectFit="cover"
             alt="image"
-            style={{ width: "auto", height: "auto" }}
           />
-        </a>
+        </Link>
 
         <p className="p-2 mb-3 font-normal text-gray-700 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
