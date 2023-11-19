@@ -26,7 +26,7 @@ export default function Faqs() {
       title:
         "How to avail assistance from the Assistance to Individuals in Crisis Situation AICS",
       content: `
-      How to avail assistance from the Assistance to Individuals in Crisis Situation AICS How to avail assistance from the Assistance to Individuals in
+      How to avail assistance from the Assistance to Individuals in Crisis Situation AICS How to avail Situation AICS How to avail assistance assistance from the Assistance to Individuals in
            
     `,
     },
@@ -34,14 +34,14 @@ export default function Faqs() {
       id: 2,
       title: "How to acquire Travel Clearance?",
       content: `
-      B How to avail assistance from the Assistance to Individuals in
+      Bin Crisis Situation AICS How to avail assistance from the Assistance to Individuals in Situation AICS How to avail assistance  How to avail assistance from the Assistance to Individuals in
      `,
     },
     {
       id: 3,
       title: "How to join the Pantawid Pamilyang Pilipino Program (4ps)?",
       content: `
-      C How to avail assistance from the Assistance to Individuals in
+      Situation AICS How to avail assistance C How to avail assistance from theSituation AICS How to avail assistance  Situation AICS How to avail assistance Situation AICS How to avail assistance Assistance to Individuals in
      `,
     },
     {
