@@ -11,9 +11,48 @@ import Logo from "../../../public/images/Logo.PNG";
 
 export default function Faqs() {
   const [openDiv, setOpenDiv] = useState(true);
+  const [itemNo, setItemNo] = useState(0);
   const handleOpenDivChange = (value) => {
     setOpenDiv(value);
   };
+  const handleItemNoChange = (itemId) => {
+    setItemNo(itemId);
+    console.log(itemNo);
+  };
+
+  const contentData = [
+    {
+      id: 1,
+      title:
+        "How to avail assistance from the Assistance to Individuals in Crisis Situation AICS",
+      content: `
+      Content for Assistance to Individuals in Crisis Situation AICS...
+    `,
+    },
+    {
+      id: 2,
+      title: "How to acquire Travel Clearance?",
+      content: `
+      Content for acquiring Travel Clearance...
+    `,
+    },
+    {
+      id: 3,
+      title: "How to join the Pantawid Pamilyang Pilipino Program (4ps)?",
+      content: `
+      Content for joining the Pantawid Pamilyang Pilipino Program (4ps)...
+    `,
+    },
+    {
+      id: 4,
+      title:
+        "How to avail assistance from the Sustainable Livelihood Program(SLP)?",
+      content: `
+      Content for availing assistance from the Sustainable Livelihood Program(SLP)...
+    `,
+    },
+  ];
+
   return (
     <main className="h-screen flex flex-col items-start justify-start p-12 md:py-14 md:px-36 ">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
@@ -62,7 +101,11 @@ export default function Faqs() {
             openDiv ? "w-full" : "w-1/3"
           } flex flex-col gap-2 mt-5 md:mt-2 `}
         >
-          <FaqsCard openDiv={openDiv} onOpenDivChange={handleOpenDivChange} />
+          <FaqsCard
+            openDiv={openDiv}
+            onOpenDivChange={handleOpenDivChange}
+            onItemNoChange={handleItemNoChange}
+          />
         </main>
         <main className="flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="flex flex-row gap-3 items-start  justify-start">
@@ -71,31 +114,10 @@ export default function Faqs() {
                 openDiv ? "hidden" : "block"
               } ml-auto text-4xl text-red-900`}
             />
-            <div className={`${openDiv ? "hidden" : "block"}`}>
-              <p>
-                How to avail assistance from the Assistance to Individuals in
-                Crisis Situation AICS How to avail assistance from the
-                Assistance to Individuals in Crisis Situation AICS How to avail
-                assistance from the Assistance to Individuals in Crisis
-                Situation AICS
-              </p>
-              <br />
-              <br />
-              <p>
-                How to avail assistance from the Assistance to Individuals in
-                Crisis Situation AICS How to avail assistance from the
-                Assistance to Individuals in Crisis Situation AICS <br /> How to
-                avail assistance from the Assistance to Individuals in Crisis
-                Situation AICS
-              </p>
-              <br />
-              <p>
-                How to avail assistance from the Assistance to Individuals in
-                Crisis Situation AICS How to avail assistance from the
-                Assistance to Individuals in Crisis Situation AICS <br /> How to
-                avail assistance from the Assistance to Individuals in Crisis
-                Situation AICS
-              </p>
+            <div className={`${openDiv ? "hidden" : "block"} `}>
+              {contentData.map((item) =>
+                item.id === itemNo ? <p key={item.id}>{item.content}</p> : null
+              )}
             </div>
           </div>
         </main>
