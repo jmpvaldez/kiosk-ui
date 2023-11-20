@@ -45,43 +45,24 @@ export default function Service() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam,
+              dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam,
             </p>
           </div>
         </div>
 
-        <div className="lg:w-1/2 text-gray-500 font-sans font-bold items-start gap-6 p-3 text-lg">
-          <p className="mt-4 font-bold text-gray-900">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam,
+        <div className="lg:w-1/2 text-gray-500 font-sans font-semibold items-start gap-6 p-3 text-4xl ">
+          <p className="border-b-2 p-4 text-gray-700">DSWD Policies</p>
+          <p className="border-b-2 p-4 text-gray-700">DSWD Memorandum</p>
+          <p className="border-b-2 p-4 text-gray-700">IATFRM Requirements</p>
+          <p className="border-b-2 p-4 text-gray-700">ARTA Advisories</p>
+          <p className=" p-4 text-gray-700 text-lg italic w-2/3">
+            Detailed listings of services within each category Service names,
+            descriptions and possibly images Links to related forms, guidlines,
+            and information
           </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim <span className="font-bold text-gray-900">veniam</span>,
-          </p>
-          <hr className="mt-5" />{" "}
-          <p className="mt-4 font-bold text-gray-900">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam,
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim
-          </p>
-          <hr className="mt-5" />{" "}
-          <p className="mt-4 font-bold text-gray-900">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            labore et dolore magna aliqua. Ut enim ad minim veniam, ad minim
-            veniam,
-          </p>
-          <hr className="mt-5" />
         </div>
       </div>
 
