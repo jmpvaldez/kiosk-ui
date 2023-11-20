@@ -150,7 +150,7 @@ export default function Faqs() {
 
       <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
-        <Link href={"/"} className=" text-dark rounded-md mt-auto">
+        <Link href={"Menu"} className=" text-dark rounded-md mt-auto">
           Back to home
         </Link>
       </main>
