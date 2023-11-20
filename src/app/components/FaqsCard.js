@@ -70,9 +70,8 @@ export default function FaqsCard({
   return (
     <>
       {categories.map((category) => (
-        <>
+        <div key={category.id}>
           <span
-            key={category.id}
             onClick={() => handleButtonClick(category.id)}
             className={`btn mx-14 border-b-2 text-gray-600 items-center justify-between p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl  lg:flex flex-row`}
           >
@@ -89,10 +88,12 @@ export default function FaqsCard({
               openDiv ? "block" : "hidden"
             } description md:hidden flex flex-col lg:w-2/3 w-full mt-5 md:mt-2`}
           >
-            {" "}
             {categories.map((item) =>
               item.id === category.id ? (
-                <div className="fixed max-w-5xl flex flex-row gap-3 items-start justify-start">
+                <div
+                  key={item.id}
+                  className="fixed max-w-5xl flex flex-row gap-3 items-start justify-start"
+                >
                   <MdOutlineMessage
                     className={`${
                       openDiv ? "hidden" : "block"
@@ -105,7 +106,7 @@ export default function FaqsCard({
               ) : null
             )}
           </main>
-        </>
+        </div>
       ))}
     </>
   );

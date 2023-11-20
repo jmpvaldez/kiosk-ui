@@ -132,7 +132,7 @@ export default function Faqs() {
             onItemNoChange={handleItemNoChange}
           />
         </div>
-        {/*  <main className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+        <main className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage
               className={`${
@@ -145,7 +145,7 @@ export default function Faqs() {
               )}
             </div>
           </div>
-        </main> */}
+        </main>
       </div>
 
       <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
