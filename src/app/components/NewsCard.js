@@ -16,7 +16,7 @@ export default function NewsCard() {
           />
         </Link>
         <p className="absolute p-1 mb-0 font-normal text-white bg-[#1e40af] text-sm opacity-60 bottom-0 w-full">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dos
           eiusmod
         </p>
       </div>
