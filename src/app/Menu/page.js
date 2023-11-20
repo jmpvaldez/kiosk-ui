@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import MenuCard from "../components/MenuCard";
 import Logo from "../../../public/images/Logo.PNG";
+import Footer from "../components/Footer";
 
 export default function Menu() {
   return (
