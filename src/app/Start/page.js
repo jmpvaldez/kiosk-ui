@@ -36,7 +36,7 @@ export default function Start() {
           <FaSearch className="text-xl text-white" />
         </div>
       </header>
-      <div className="flex flex-col bg-gray-200 md:w-1/2 h-1/2 rounded-r-2xl items-center w-full mt-16 space-y-3 md:space-y-4 p-9">
+      <div className="flex flex-col bg-gray-200 md:w-1/2 h-1/2 rounded-r-2xl items-center w-full  space-y-3 md:space-y-4 p-9">
         <div className="flex items-center justify-center">
           <p className="text-gray-700 mb-4 text-2xl">Please select language</p>
         </div>
