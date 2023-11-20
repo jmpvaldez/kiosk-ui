@@ -14,7 +14,7 @@ export default function NewsCard() {
             objectFit="cover"
             alt="image"
           />
-          <p className="p-2 mb-3 font-normal text-gray-700 bg-[#1e40af] opacity-60">
+          <p className="p-2 mb-3 font-normal text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
           </p>
