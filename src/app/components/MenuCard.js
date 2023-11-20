@@ -1,9 +1,14 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import icons from "../../../public/images/icons.PNG";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function MenuCard({ categories }) {
+  const initialPosition = { x: -100, opacity: 0 };
+  const animatePosition = { x: 0, opacity: 1 };
+
   return (
     <>
       {categories.map((category) => (

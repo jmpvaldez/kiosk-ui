@@ -11,7 +11,7 @@ export default function Home() {
         backgroundImage:
           'linear-gradient(to top, rgba(0,0,0,0.5), transparent), linear-gradient(to left, rgba(0,0,0,0.7), transparent), linear-gradient(to bottom, rgba(0,0,0,0.7), transparent), linear-gradient(to right, rgba(0,0,0,0.7), transparent), url("/images/bg.jpg")',
       }}
-      className=" h-screen flex flex-col items-start justify-start p-12 md:p-36"
+      className=" h-screen flex flex-col items-start justify-start p-12 md:p-28"
     >
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
