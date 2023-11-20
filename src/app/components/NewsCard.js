@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import correct from "../../../public/images/image.PNG";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function NewsCard() {
   return (
-    <div className="max-w-sm mx-auto bg-white border rounded-lg mt-12 md:mt-2">
+    <div className="max-w-sm mx-auto bg-white rounded-lg mt-12 md:mt-2">
       <div className="relative">
         <Link href="#">
           <Image
@@ -16,11 +15,9 @@ export default function NewsCard() {
             alt="image"
           />
         </Link>
-
-        <p className="p-2 mb-3 font-normal text-gray-700 ">
+        <p className="absolute p-1 mb-0 font-normal text-white bg-[#1e40af] text-sm opacity-60 bottom-0 w-full">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
-          <FaArrowRightLong />
+          eiusmod
         </p>
       </div>
     </div>

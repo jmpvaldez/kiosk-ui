@@ -38,7 +38,7 @@ MenuCard.defaultProps = {
       title: "Featured Stories",
       description:
         "Read our featured stories and stay updated with inspiring content.",
-      link: "/featured-stories",
+      link: "Featured",
     },
     {
       id: 3,
