@@ -85,7 +85,11 @@ export default function FaqsCard({
               }  text-4xl text-red-900 `}
             />
 
-            <main className="md:hidden flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+            <main
+              className={`${
+                openDiv ? "block" : "hidden"
+              } md:hidden flex flex-col lg:w-2/3 w-full mt-5 md:mt-2 `}
+            >
               <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
                 <MdOutlineMessage
                   className={`${
@@ -93,12 +97,7 @@ export default function FaqsCard({
                   } ml-auto text-2xl text-red-900`}
                 />
                 <div className={`${openDiv ? "hidden" : "block"} `}>
-                  {/*  {contentData.map((item) =>
-                  item.id === itemNo ? (
-                    <p key={item.id}>{item.content}</p>
-                  ) : null
-                )} */}
-                  test data
+                  {category.content}
                 </div>
               </div>
             </main>

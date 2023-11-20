@@ -123,7 +123,7 @@ export default function Faqs() {
       <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
         <div
           className={`${
-            openDiv ? "w-full " : "w-1/3 "
+            openDiv ? "w-full " : "lg:w-1/3 "
           } flex flex-col gap-2 mt-5 md:mt-2  `}
         >
           <FaqsCard
