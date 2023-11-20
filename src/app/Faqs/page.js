@@ -79,7 +79,7 @@ export default function Faqs() {
   ];
 
   return (
-    <main className="h-screen flex flex-col items-start justify-start p-12 md:py-14 md:px-36 ">
+    <main className="h-screen flex flex-col items-start justify-start p-12 md:py-14  lg:px-36 ">
       <header className="flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Image
@@ -109,21 +109,21 @@ export default function Faqs() {
           />
           <p>PFAQs</p>
         </div>
-        <span className="w-2/3">
+        <span className="md:w-1/2 lg:w-2/3">
           <h2
             className={`${
               openDiv ? "hidden" : "block"
-            } font-semibold text-gray-500 text-2xl`}
+            } font-semibold text-gray-500 text-xl`}
           >
             How to avail assistance from the Assistance to Individuals in Crisis
             Situation AICS
           </h2>
         </span>
       </div>
-      <div className="flex flex-row w-full overflow-y-auto scrollbar-hidden ">
+      <div className="flex flex-row w-full overflow-y-auto custom-scrollbar-hidden">
         <div
           className={`${
-            openDiv ? "w-full" : "w-1/3 "
+            openDiv ? "w-full " : "w-1/3 "
           } flex flex-col gap-2 mt-5 md:mt-2  `}
         >
           <FaqsCard
@@ -132,7 +132,7 @@ export default function Faqs() {
             onItemNoChange={handleItemNoChange}
           />
         </div>
-        <main className=" flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+        <main className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
           <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage
               className={`${
