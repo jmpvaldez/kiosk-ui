@@ -45,7 +45,7 @@ MenuCard.defaultProps = {
       title: "Service Listings",
       description:
         "Find detailed listings of the services we offer to assist you.",
-      link: "/service-listings",
+      link: "Service",
     },
     {
       id: 4,
