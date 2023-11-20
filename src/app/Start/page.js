@@ -2,13 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
-import Logo from "../../../public/images/Logo.PNG";
+import Logo from "../../../public/images/pnglogo.PNG";
 
 export default function Start() {
   return (
     /* eslint-disable react/no-unescaped-entities */
 
-    <main className=" h-screen flex flex-col items-start justify-start ">
+    <main
+      style={{
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundImage:
+          'linear-gradient(to top, rgba(0,0,0,0.5), transparent), linear-gradient(to left, rgba(0,0,0,0.7), transparent), linear-gradient(to bottom, rgba(0,0,0,0.7), transparent), linear-gradient(to right, rgba(0,0,0,0.7), transparent), url("/images/bg.jpg")',
+      }}
+      className=" h-screen flex flex-col items-start justify-start "
+    >
       <header className="md:py-14 md:px-36 md:pl-36 flex items-start md:items-center flex-col md:flex-row justify-between w-full mb-4">
         <div className="flex items-center">
           <Image
@@ -25,7 +33,7 @@ export default function Start() {
             type="text"
             className="px-4 py-2 border-b border-gray-300 focus:outline-none bg-transparent"
           />
-          <FaSearch className="text-xl" />
+          <FaSearch className="text-xl text-white" />
         </div>
       </header>
       <div className="flex flex-col bg-gray-200 md:w-1/2 h-1/2 rounded-r-2xl items-center w-full mt-16 space-y-3 md:space-y-4 p-9">
@@ -59,7 +67,7 @@ export default function Start() {
 
       <main className="md:py-14 md:px-36 flex flex-row  items-center gap-3 justify-start w-full md:w-1/3  mt-auto">
         <IoIosArrowRoundBack />
-        <Link href={"/"} className=" text-dark rounded-md mt-auto">
+        <Link href={"/"} className=" text-white rounded-md mt-auto">
           Back
         </Link>
       </main>

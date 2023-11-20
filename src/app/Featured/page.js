@@ -5,6 +5,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import NewsCard from "../components/NewsCard";
 import Logo from "../../../public/images/Logo.PNG";
+import FeaturedCard from "../components/FeaturedCard";
 
 export default function Featured() {
   return (
@@ -41,12 +42,12 @@ export default function Featured() {
         </div>
       </div>
       <main className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4   w-full mt-5 md:mt-4 ">
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
+        <FeaturedCard />
       </main>
       <main className="items-center justify-between p-12 text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <div></div>
