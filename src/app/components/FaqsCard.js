@@ -74,34 +74,37 @@ export default function FaqsCard({
           <span
             key={category.id}
             onClick={() => handleButtonClick(category.id)}
-            className={`${
-              openDiv ? "w-full" : ""
-            } mx-14 border-b-2 text-gray-600 items-center  justify-between  p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl flex-col lg:flex flex-row`}
+            className={`btn mx-14 border-b-2 text-gray-600 items-center justify-between p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl  lg:flex flex-row`}
           >
             <p>{category.title}</p>
             <MdOutlineMessage
               className={`${
-                openDiv ? "flex" : "hidden"
-              }  text-4xl text-red-900 `}
+                openDiv ? "hidden lg:flex" : "hidden"
+              } text-4xl text-red-900 `}
             />
-
-            <main
-              className={`${
-                openDiv ? "block" : "hidden"
-              } md:hidden flex flex-col lg:w-2/3 w-full mt-5 md:mt-2 `}
-            >
-              <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
-                <MdOutlineMessage
-                  className={`${
-                    openDiv ? "hidden" : "block"
-                  } ml-auto text-2xl text-red-900`}
-                />
-                <div className={`${openDiv ? "hidden" : "block"} `}>
-                  {category.content}
-                </div>
-              </div>
-            </main>
           </span>
+
+          <main
+            className={`${
+              openDiv ? "block" : "hidden"
+            } description md:hidden flex flex-col lg:w-2/3 w-full mt-5 md:mt-2`}
+          >
+            {" "}
+            {categories.map((item) =>
+              item.id === category.id ? (
+                <div className="fixed max-w-5xl flex flex-row gap-3 items-start justify-start">
+                  <MdOutlineMessage
+                    className={`${
+                      openDiv ? "hidden" : "block"
+                    } ml-auto text-2xl text-red-900`}
+                  />
+                  <div className={`${openDiv ? "hidden" : "block"} `}>
+                    <p key={item.id}>{item.content}</p>
+                  </div>
+                </div>
+              ) : null
+            )}
+          </main>
         </>
       ))}
     </>

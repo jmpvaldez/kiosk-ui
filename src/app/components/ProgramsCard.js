@@ -10,17 +10,17 @@ export default function ProgramsCard({ categories }) {
         <Link
           key={category.id}
           href={"Aics"}
-          className=" border rounded-3xl mx-auto text-blue-900 mb-5 min-w-1/4 md:w-10/12 md:mb-0 items-center  gap-1 px-4 py-2 justify-start  hover:cursor-pointer hover:text-red-900 md:text-lg flex flex-col  text-center"
+          className="border whitespace-norma rounded-3xl mx-auto text-blue-900 mb-5 min-w-1/4 md:w-10/12 md:mb-0 items-center max-h-52 gap-1 px-4 py-2 justify-start  hover:cursor-pointer hover:text-red-900 md:text-lg flex flex-col text-center"
         >
           <Image
             width={65}
             height={65}
             src={icons}
             alt={category.title}
-            className="mt-4"
+            className="mt-1"
             style={{ width: "auto", height: "auto" }}
           />
-          <p>{category.title}</p>
+          <p className="whitespace-normal text-sm">{category.title}</p>
           <FaArrowRightLong />
         </Link>
       ))}
