@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function NewsCard() {
   return (
-    <div className="max-w-sm mx-auto bg-white border rounded-lg">
+    <div className="max-w-sm mx-auto bg-white border rounded-lg mt-12 md:mt-2">
       <div className="relative">
         <Link href="#">
           <Image
