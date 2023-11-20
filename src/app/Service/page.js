@@ -54,11 +54,19 @@ export default function Service() {
         </div>
 
         <div className="lg:w-1/2 text-gray-500 font-sans font-semibold items-start gap-6 p-3 text-4xl ">
-          <p className="border-b-2 p-4 text-gray-700">DSWD Policies</p>
-          <p className="border-b-2 p-4 text-gray-700">DSWD Memorandum</p>
-          <p className="border-b-2 p-4 text-gray-700">IATFRM Requirements</p>
-          <p className="border-b-2 p-4 text-gray-700">ARTA Advisories</p>
-          <p className=" p-4 text-gray-700 text-lg italic w-2/3">
+          <p className="border-b-2 p-4 text-gray-700 tracking-wider">
+            DSWD Policies
+          </p>
+          <p className="border-b-2 p-4 text-gray-700 tracking-wider">
+            DSWD Memorandum
+          </p>
+          <p className="border-b-2 p-4 text-gray-700 tracking-wider">
+            IATFRM Requirements
+          </p>
+          <p className="border-b-2 p-4 text-gray-700 tracking-wider">
+            ARTA Advisories
+          </p>
+          <p className=" p-4 text-gray-700 text-lg italic w-2/3 tracking-wider">
             Detailed listings of services within each category Service names,
             descriptions and possibly images Links to related forms, guidlines,
             and information
