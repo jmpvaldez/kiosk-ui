@@ -113,10 +113,11 @@ export default function Faqs() {
           <h2
             className={`${
               openDiv ? "hidden" : "block"
-            } font-semibold text-gray-500 text-xl`}
+            } font-bold text-gray-500 md:text-xl lg:text-3xl`}
           >
-            How to avail assistance from the Assistance to Individuals in Crisis
-            Situation AICS
+            {contentData.map((item) =>
+              item.id === itemNo ? <p key={item.id}>{item.title}</p> : null
+            )}
           </h2>
         </span>
       </div>
@@ -132,8 +133,8 @@ export default function Faqs() {
             onItemNoChange={handleItemNoChange}
           />
         </div>
-        <main className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
-          <div className="fixed  max-w-5xl flex flex-row gap-3 items-start  justify-start">
+        <div className="hidden md:flex flex-col md:w-2/3 w-full mt-5 md:mt-2 ">
+          <div className="fixed font-semibold max-w-5xl flex flex-row gap-3 items-start  justify-start">
             <MdOutlineMessage
               className={`${
                 openDiv ? "hidden" : "block"
@@ -145,15 +146,15 @@ export default function Faqs() {
               )}
             </div>
           </div>
-        </main>
+        </div>
       </div>
 
-      <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
+      <div className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
         <Link href={"Menu"} className=" text-dark rounded-md mt-auto">
-          Back to home
+          Back
         </Link>
-      </main>
+      </div>
     </main>
   );
 }

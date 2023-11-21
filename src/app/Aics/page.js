@@ -26,7 +26,11 @@ export default function Aics() {
           >
             <Image width={65} height={65} src={correct} alt="pic" />
             <p>
-              Person with <br /> Disability
+              Assistance to Individuals
+              <br /> in Crisis Situations <br />{" "}
+              <span className="font-bold">
+                {"("}AICS{")"}
+              </span>
             </p>
             <FaArrowRightLong />
           </Link>

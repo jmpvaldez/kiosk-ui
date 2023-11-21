@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex items-center">
           <input
             type="text"
-            className="px-4 py-2 border-b border-gray-300 focus:outline-none bg-transparent"
+            className="px-4 text-white py-2 border-b border-gray-300 focus:outline-none bg-transparent"
           />
           <FaSearch className="text-xl text-white" />
         </div>

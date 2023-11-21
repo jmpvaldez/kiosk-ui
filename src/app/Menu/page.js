@@ -29,15 +29,16 @@ export default function Menu() {
         </div>
       </header>
 
-      <main className="md:grid md:grid-cols-2 gap-4 items-start justify-start w-full mt-5 md:mt-14 ">
+      <div className="md:grid md:grid-cols-2 gap-4 items-start justify-start w-full mt-5 md:mt-14">
         <MenuCard />
-      </main>
-      <main className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
+      </div>
+
+      <div className="items-center text-red-900 font-semibold flex flex-row   gap-3  w-full mt-12s md:mt-auto">
         <IoIosArrowRoundBack />
         <Link href={"/"} className=" text-dark rounded-md mt-auto">
           Back to home
         </Link>
-      </main>
+      </div>
     </main>
   );
 }

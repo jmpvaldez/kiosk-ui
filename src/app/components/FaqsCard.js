@@ -71,9 +71,11 @@ export default function FaqsCard({
     <>
       {categories.map((category) => (
         <div key={category.id}>
-          <span
+          <div
             onClick={() => handleButtonClick(category.id)}
-            className={`btn mx-14 border-b-2 text-gray-600 items-center justify-between p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl  lg:flex flex-row`}
+            className={`${
+              openDiv ? "w-full" : ""
+            }  mx-14 border-b-2  text-gray-600 items-center justify-between p-3 hover:cursor-pointer hover:text-red-900 font-semibold md:text-2xl  lg:flex flex-row`}
           >
             <p>{category.title}</p>
             <MdOutlineMessage
@@ -81,7 +83,7 @@ export default function FaqsCard({
                 openDiv ? "hidden lg:flex" : "hidden"
               } text-4xl text-red-900 `}
             />
-          </span>
+          </div>
 
           <main
             className={`${

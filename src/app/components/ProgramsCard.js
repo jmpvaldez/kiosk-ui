@@ -10,7 +10,7 @@ export default function ProgramsCard({ categories }) {
         <Link
           key={category.id}
           href={"Aics"}
-          className="border whitespace-norma rounded-3xl mx-auto text-blue-900 mb-5 min-w-1/4 md:w-10/12 md:mb-0 items-center max-h-52 gap-1 px-4 py-2 justify-start  hover:cursor-pointer hover:text-red-900 md:text-lg flex flex-col text-center"
+          className="border font-semibold whitespace-norma rounded-3xl mx-auto text-blue-900 mb-5 min-w-1/4 md:w-10/12 md:mb-0 items-center max-h-52 gap-1 px-4 py-2 justify-start  hover:cursor-pointer hover:text-red-900 md:text-lg flex flex-col text-center"
         >
           <Image
             width={65}
@@ -94,7 +94,7 @@ ProgramsCard.defaultProps = {
       title:
         "Kapit-Bisig Laban sa Kahirapan-Comprehensive and Integrated Delivery of Social Services",
       description:
-        "Holistic approach to poverty alleviation through comprehensive and integrated social services.",
+        "Holistic approach to poverty alleviation through comprehensive and integrated social services. (KALAHI-CIDSS)",
     },
     {
       id: 20,
